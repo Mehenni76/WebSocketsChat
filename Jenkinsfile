@@ -39,7 +39,7 @@ pipeline {
         stage('Test'){
             steps {
                 sh 'echo "---=--- Test ---=---"'
-                sh 'echo "mvn test ne fonctionne pas car pb dans les tests"'
+                sh 'echo "---=--- mvn test ne fonctionne pas car pb dans les tests ---=---"'
             }
         }
         stage('Package'){
@@ -57,7 +57,7 @@ pipeline {
         steps {
             script {
                 sshPublisher(publishers: [
-                    sshPublisherDesc(configName: 'ec2-host', transfers:[
+                    sshPublisherDesc(configName: 'ec2-host1', transfers:[
                         sshTransfer(
                           execCommand: '''
                                 echo "-=- Cleaning project -=-"

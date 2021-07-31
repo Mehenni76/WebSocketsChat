@@ -63,7 +63,7 @@ pipeline {
                                 echo "-=- Cleaning project -=-"
                                 sudo docker stop WebSocketsChat  || true
                                 sudo docker rm WebSocketsChat || true
-                                sudo docker rmi mdjadda/WebSocketsChat:1.0 || true
+                                sudo docker rmi mdjadda/websocketschat:1.0 || true
                             '''
                         ),
                         sshTransfer(
@@ -78,8 +78,8 @@ pipeline {
                             remoteDirectory: "//home//ec2-user",
                             execCommand: '''
                                 cd //home//ec2-user;
-                                sudo docker build -t mdjadda/WebSocketsChat:1.0 .; 
-                                sudo docker run -d --name WebSocketsChat -p 8090:8090 mdjadda/WebSocketsChat:1.0;
+                                sudo docker build -t mdjadda/websocketschat:1.0 .; 
+                                sudo docker run -d --name WebSocketsChat -p 8090:8090 mdjadda/websocketschat:1.0;
                             '''
                         )
                     ])

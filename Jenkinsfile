@@ -21,7 +21,7 @@ pipeline {
         stage('Checkout'){
             steps {
                 sh 'echo "---=--- Checkout ---=---"'
-                git branch: 'main', url: 'https://github.com/Mehenni76/WebSocketsChat.git'
+                git branch: 'main', url: 'https://github.com/Mehenni76/WebSocketsChatProjet.git'
             }
         }
         stage('Clean'){

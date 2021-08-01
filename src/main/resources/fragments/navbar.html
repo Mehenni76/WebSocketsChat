@@ -25,7 +25,7 @@ body {
 	<header>
 		<nav th:fragment="nav_fragment"
 			class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-			<a class="navbar-brand" th:href="@{ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/home}">Arts&Chat</a>
+			<a class="navbar-brand" th:href="@{http://ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/home}">Arts&Chat</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarResponsive" aria-controls="navbarResponsive"
 				aria-expanded="false" aria-label="Toggle navigation">
@@ -34,29 +34,29 @@ body {
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item active" sec:authorize="!isAuthenticated()">
-						<a class="nav-link" th:href="@{ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/home}">Accueil<span
+						<a class="nav-link" th:href="@{http://ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/home}">Accueil<span
 							class="sr-only">(current)</span>
 					</a>
 					</li>
 					<li class="nav-item active" sec:authorize="isAuthenticated()">
-						<a class="nav-link" href="ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/espaceConnect">Accueil <span
+						<a class="nav-link" href="http://ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/espaceConnect">Accueil <span
 							class="sr-only">(current)</span>
 					</a>
 					</li>
 					<li class="nav-item" sec:authorize="!isAuthenticated()"><a
-						class="nav-link" href="ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/espaceConnect">Connexion</a></li>
+						class="nav-link" href="http://ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/espaceConnect">Connexion</a></li>
 
 					<li class="nav-item" sec:authorize="isAuthenticated()"><a
-						class="nav-link" th:href="@{ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/Publications}">Mes publications</a></li>
+						class="nav-link" th:href="http://@{ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/Publications}">Mes publications</a></li>
 
 					<li class="nav-item" sec:authorize="isAuthenticated()"><a
 						class="nav-link" th:href="@{http://localhost:8090}">Messageries</a>
 					</li>
 					<li class="nav-item" sec:authorize="isAuthenticated()"><a
-						class="nav-link" th:href="@{ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/home}">Annonces</a>
+						class="nav-link" th:href="@{http://ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/home}">Annonces</a>
 					</li>
 					<li class="nav-item" sec:authorize="isAuthenticated()"><a
-						class="nav-link" href="ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/session-end">Déconnexion</a></li>
+						class="nav-link" href="http://ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085/session-end">Déconnexion</a></li>
 				</ul>
 			</div>
 		</nav>

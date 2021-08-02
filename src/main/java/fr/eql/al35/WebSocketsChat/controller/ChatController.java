@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import fr.eql.al35.WebSocketsChat.model.ChatMessage;
 
 @RestController
-@CrossOrigin(origins = { "ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085"})
+@CrossOrigin(origins = { "http://ec2-3-140-192-195.us-east-2.compute.amazonaws.com:8085"})
 @RequestMapping(value="/chat-api-rest" , headers="Accept=application/json")
 public class ChatController {
 	

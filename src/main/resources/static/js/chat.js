@@ -1,4 +1,4 @@
-const url = 'http://localhost:8090';
+const url = 'http://ec2-18-224-179-88.us-east-2.compute.amazonaws.com:8090';
 
 
 function fetchAll() {
